@@ -1,0 +1,125 @@
+// landing-what-is-explorecareers-container (row)
+//   images (row)
+//     puzzle-piece (element)
+//     laptop (element)
+//   all-text (column)
+//     what-is-explorecareers-question (element)
+//     what-is-explorecareers-header (element)
+//     what-is-explorecareers-description (element)
+
+@import url(//fonts.googleapis.com/css?family=Poppins|Poppins|Poppins:400,600,700); //font weight: https://stackoverflow.com/questions/3367589/font-weight-is-not-working-properly
+:host {
+  display: block;
+
+  * {
+    font-family: 'Poppins';
+  }
+
+  .landing-what-is-explorecareers-container {
+    // REMOVE WHEN FINISHING LAYOUT STYLES
+    border: 1px solid black;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 100px;
+    padding-top: 360px;
+    padding-bottom: 360px;
+
+    .images {
+      height: 100%;
+      display: flex;
+      //puts the images in a row
+      flex-direction: row;
+      flex-shrink:  0;
+      margin-right: 51px;
+      padding-bottom: 20px;
+
+      .puzzle-piece {
+        width: 147px;
+        display: flex;
+        align-self: flex-end;
+        margin-right: 6px;
+        margin-bottom: 8px;
+      }
+  
+      .laptop {
+        width: 497px;
+        display: flex;
+        align-self: flex-end;
+      }
+    }
+
+    .all-text {
+      height: 100%;
+      // width: 424px;
+      display: flex;
+      align-self: flex-start;
+      flex-direction: column;
+      flex-grow: 1;
+
+
+      .what-is-explorecareers-question {
+        // width: 327px;
+        width: 479px;
+
+        color: #3E67F8;
+        font-family: 'Poppins';
+        font-style: normal;
+        
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-overflow: wrap;
+        margin-bottom: 16px;
+        //added
+        margin: auto;
+
+      }
+
+      .what-is-explorecareers-header {
+        width: 479px;
+        color: #272750;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        text-overflow: wrap;
+        margin-bottom: 16px;
+        //added
+        margin: auto;
+
+      }
+
+      .what-is-explorecareers-description {
+        width: 479px;
+        color: #272750;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.015em;
+        text-overflow: ellipsis;
+        //added
+        margin: auto;
+
+      }
+    }
+
+
+
+  }
+}
